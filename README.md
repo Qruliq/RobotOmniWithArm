@@ -114,5 +114,7 @@ Ogromne podziękowania dla Core Electronics, how to mechatronics i urzytkownika 
 
 ## Linki
 [1] https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
+
 [2] https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python/
+
 [3] https://www.thingiverse.com/thing:994180
