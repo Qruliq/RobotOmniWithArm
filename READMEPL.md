@@ -26,3 +26,7 @@ Platforma składa się z czterech kół mecanum oraz tej samej liczby silników.
 
 Oprócz platformy mobilnej, niezbędne było wybranie układu wykonawczego dla manipulatora. Ponieważ manipulator wykorzystany w pracy jest implementacją gotowego projektu, również dobór napędu do niego był podyktowany z góry. Sterowanie manipulatorem można było oprzeć o serwa MG-995 lub MG-996 firmy TowerPro. Są to bliźniacze serwa, które mają identyczne charakterystyki i wymiary, lecz różne regulatory. Ze względu na większy moment, do sterowania manipulatorem został wykorzystany MG996R, który jest ulepszoną wersją MG995, oferując przy tym lepszą odporność na wstrząsy oraz większą precyzję. 
 * **Hardware**
+
+![robot4](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot4.png)
+
+W projekcie wykorzystano Raspberry Pi 3 Model B+
