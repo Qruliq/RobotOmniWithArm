@@ -100,6 +100,10 @@ Poniższa tabela przedstawia kierunek obrotu kół jaki powinien być zadany na 
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-Kierunek | Koło 0 | Koło 1 | Koło 2 | Koło 3
------------- | -------------
-Prosto | 1 | 1 | 1 | 1
+| Kierunek | Koło 0 | Koło 1 | Koło 2 | Koło 3 |
+|----------|--------|--------|--------|--------|
+| Prosto   |    1   |    1   |    1   |    1   |
+| Tył      |    1   |    1   |    1   |    1   |
+| Lewo     |    1   |    1   |    1   |    1   |
+| Prawo    |    1   |    1   |    1   |    1   |
+| Lewa skośna do przodu|    1   |    1   |    1   |    1   |
