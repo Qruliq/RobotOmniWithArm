@@ -11,3 +11,7 @@ Konstrukcja składa się z drewnianej (płyta pilśniowa) platformy mobilnej ora
 
 ## Budowa i hardware
 ![kola](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/kola.png)
+Koła mecanum, potocznie nazywane kołami szwedzkimi, zostały opatentowane w 1975r. przez Bengta Erlanda Ilona. Tworząc konstrukcję platformy wyposażonej w parę kół przeznaczonych na lewą oś i parę na prawą oraz cztery silniki prądu stałego jako napęd każdego z kół, możemy uzyskać robota omnikierunkowego, posiadającego trzy stopnie swobody. 
+
+Koła zostały zamontowane na wałkach silników krokowych, które zostały użyte do przemieszczania się platformy we wszystkich kierunkach. Do umieszczenia kół na napędzie, było konieczne stworzenie dodatkowych piast. Piasty użyte w pracy zostały wykonane z tekstolitu i przykręcone wkrętem przez otwór centralny do koła, następnie całość została nałożona na wałek napędowy silnika i zabezpieczona. Kołnierz piasty ma 45mm, natomiast wałek 15mm.
+![piasty](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/piasty.png)
