@@ -41,4 +41,4 @@ DRV8825 zapewnia zintegrowane rozwiązanie sterownika silnika dla drukarek, skan
 
 * **PCB**
 
-xfun::embed_file('https://github.com/Qruliq/RobotOmniWithArm/blob/main/pcb/pcbSchematic.pdf')
+![pcb]('https://github.com/Qruliq/RobotOmniWithArm/blob/main/pcb/pcbSchematic.pdf', "pcb")
