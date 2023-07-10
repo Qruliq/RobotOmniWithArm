@@ -2,6 +2,7 @@
 Omnikierunkowy robot mobilny z manipulatorem/Omnidirectional mobile robot with robot arm
 ![robot1](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot1.jpg)
 
+## Heading 2 for O projekcie
 Projekt został zainspirowany wpisem na blogu how to mechatronics: https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
 ![robot2](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot2.jpg)
 
