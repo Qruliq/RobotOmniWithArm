@@ -10,3 +10,4 @@ Konstrukcja składa się z drewnianej (płyta pilśniowa) platformy mobilnej ora
 ![robot3](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot3.jpg)
 
 ## Budowa i hardware
+![kola](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/kola.png)
