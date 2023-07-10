@@ -17,3 +17,7 @@ Koła mecanum, potocznie nazywane kołami szwedzkimi, zostały opatentowane w 19
 Koła zostały zamontowane na wałkach silników krokowych, które zostały użyte do przemieszczania się platformy we wszystkich kierunkach. Do umieszczenia kół na napędzie, było konieczne stworzenie dodatkowych piast. Piasty użyte w pracy zostały wykonane z tekstolitu i przykręcone wkrętem przez otwór centralny do koła, następnie całość została nałożona na wałek napędowy silnika i zabezpieczona. Kołnierz piasty ma 45mm, natomiast wałek 15mm.
 
 ![piasty](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/piasty.png)
+
+Platforma składa się z czterech kół mecanum oraz tej samej liczby silników. Koła mecanum są z kolei przymocowane do wałów poszczególnych silników za pomocą piast. Konstrukcja obiektu wymaga zastosowania czterech niezależnie sterowanych silników. Głównym czynnikiem podczas doboru układu wykonawczego podwozia była precyzja oraz kompatybilność z układem zasilającym. Z uwagi, że silniki krokowe są napędami precyzyjnymi o prostej budowie, a także charakteryzuje je możliwość kontroli kąta obrotu, praca na niskich prędkościach kątowych oraz zdolność do szybkiej zmiany kierunku ruchu, zostały one wybrane jako napęd podwozia. Z dostępnych na rynku silników krokowych, w pracy zostały użyte cztery silniki bipolarne Nema 17 z momentem trzymania 59Ncm.
+
+![silniki](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/silniki.png)
