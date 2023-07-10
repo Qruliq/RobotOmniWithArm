@@ -49,3 +49,20 @@ W celu uproszczenia sterowania układami wykonawczymi robota została zaprojekto
 
 Cały projekt płytki drukowanej został wykonany w darmowym środowisku internetowym EasyEDA. PCB ma dwie warstwy miedzi: dolną i górną . Ścieżki z dolnej warstwy łączą piny STEP oraz DIR sterowników DRV8825 z odpowiadającymi im pinom GPIO Raspberry, zwierają piny RST oraz SLP oraz doprowadzają 12V napięcie zasilania silników. W warstwie górnej została zastosowana płaszczyzna masy. Wyróżnić tu można jedynie ścieżkę która doprowadza napięcie 5V na piny serwa oraz pin FAULT sterownika DRV8825. Ścieżki poprowadzone na piny M1, M2 i M3 sterowników silników krokowych zastały naniesione na model w celu dobrania rozdzielczości mikrokroku. Tak jak przedstawiono to na Rys. 2.9. silniki naszego robota ustawiamy na wartość 1/16 mikrokroku. Za pomocą jumperów spinamy pin M3 z zasilaniem 5V. Kolejnym krokiem było wlutowanie w jej strukturę odpowiednich elementów. Piny damskie zostały wlutowane w miejsca przeznaczone dla sterowników DRV8825 oraz w górnej części płytki prototypowej, w ten sposób, aby pokrywały się z GPIO Raspberry Pi. Piny męskie wlutowano w miejsca, gdzie podłączane są fazy silników krokowych, przewody z serwomechanizmów, oraz ustawianie mikrokroków na sterownikach silników krokowych. Dodatkowo w płytkę wlutowano kondensatory odsprzęgające 100µf 35V oraz zaciski śrubowe na które doprowadzane jest zasilanie 12V. 
 **Pliki dotyczące PCB znajdują się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/pcb**
+
+## Sterowanie
+* **Oprogramowanie**
+Systemem operacyjnym wykorzystanym w pracy jest Raspbian. Jest to darmowy system operacyjny oparty na Debianie, zoptymalizowany pod kątem sprzętu Raspberry Pi. Raspbian to zestaw podstawowych programów i narzędzi, dzięki którym Raspberry Pi działa. Ponadto zawiera ponad 35000 pakietów oraz wstępnie skompilowane oprogramowanie w przystępnym formacie, ułatwiające instalację na Raspberry Pi.
+* **Kod**
+Język Python został wykorzystany w pracy do napisania kodu sterowania robotem. Wykorzystano przy tym biblioteki oraz funkcje jakie oferuje Raspberry Pi. Jedną z bibliotek jakie zostały zastosowane był Servoblaster. Jest to biblioteka, która zapewnia interfejs do sterowania wieloma (domyślnie 8) serwami za pomocą pinów GPIO. Dzięki bibliotece Servoblaster możliwa jest kontrola pozycji serwa, poprzez wysyłanie polecenia do sterownika informującego o szerokości impulsu określonego na wyjściu serwomechanizmu. Szerokość impulsu jest utrzymywana do momentu wysłania nowego polecenia zmieniającego go. W pracy wykorzystano również bibliotekę pigpio, której funkcje posłużyły do sterowania silnikami platformy mobilnej, a także bibliotekę time, dzięki której można stosować stemple czasowe. Aby zainstalować servoblaster u siebie na mikrokontrolerze należy w oknie konsoli przeprowadzić następujące operacje:
+'sudo apt-get install python-dev python-setuptools
+
+git clone https://github.com/WiringPi/WiringPi-Python
+
+cd WiringPi-Python
+
+git submodule update --init
+
+python setup.py install
+
+cd .. '
