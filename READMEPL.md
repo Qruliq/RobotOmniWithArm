@@ -52,14 +52,40 @@ Cały projekt płytki drukowanej został wykonany w darmowym środowisku interne
 
 ## Sterowanie
 * **Oprogramowanie**
+  
 Systemem operacyjnym wykorzystanym w pracy jest Raspbian. Jest to darmowy system operacyjny oparty na Debianie, zoptymalizowany pod kątem sprzętu Raspberry Pi. Raspbian to zestaw podstawowych programów i narzędzi, dzięki którym Raspberry Pi działa. Ponadto zawiera ponad 35000 pakietów oraz wstępnie skompilowane oprogramowanie w przystępnym formacie, ułatwiające instalację na Raspberry Pi.
 * **Kod**
+
 Język Python został wykorzystany w pracy do napisania kodu sterowania robotem. Wykorzystano przy tym biblioteki oraz funkcje jakie oferuje Raspberry Pi. Jedną z bibliotek jakie zostały zastosowane był Servoblaster. Jest to biblioteka, która zapewnia interfejs do sterowania wieloma (domyślnie 8) serwami za pomocą pinów GPIO. Dzięki bibliotece Servoblaster możliwa jest kontrola pozycji serwa, poprzez wysyłanie polecenia do sterownika informującego o szerokości impulsu określonego na wyjściu serwomechanizmu. Szerokość impulsu jest utrzymywana do momentu wysłania nowego polecenia zmieniającego go. W pracy wykorzystano również bibliotekę pigpio, której funkcje posłużyły do sterowania silnikami platformy mobilnej, a także bibliotekę time, dzięki której można stosować stemple czasowe. Aby zainstalować servoblaster u siebie na mikrokontrolerze należy w oknie konsoli przeprowadzić następujące operacje:
 ```
-sudo apt-get install python-dev python-setuptools'
+sudo apt-get install python-dev python-setuptools
 git clone https://github.com/WiringPi/WiringPi-Python
 cd WiringPi-Python
 git submodule update --init
 python setup.py install
 cd .. 
+```
+Kod do sterowania znajduje się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/code
+* **Sterowanie**
+
+![pad](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/pad.jpg)
+
+Użycie gamepadów w robotyce hobbystycznej jest dość częstym zjawiskiem. Przeglądając pakiety środowiska ROS (Robot Operating System) można znaleźć rozwiązania, które mapują przyciski kontrolera. Najczęściej robotycy w swoich projektach wykorzystują kontrolery do konsoli Playstation. W projekcie został wykorzystany gamepad Gen Game K909. Urządzenie przeznaczone jest do gier na smartfony z systemem Android oraz IOS. Gamepad został wykorzystany do sterowania robotem mobilnym, ponieważ zarówno Raspberry Pi model B+, jak i wcześniej wymieniony gamepad wykorzystują technologie Bluetooth. Po sparowaniu ze sobą dwóch urządzeń istotnym jest zmapowanie jego przycisków. Domyślną ścieżką w przypadku raspbian jest '/dev/input/'. Aby wykorzystać gamepad w naszym projekcie należy w pierwszej kolejności zainstalować bibliotekę evdev 'sudo pip install evdev'. Następnie za pomocą poniższego kodu sprawdzamy jakie wartości mają poszczególne przyciski.
+```
+#Kod zaczerpnięty z https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python/
+#import evdev
+from evdev import InputDevice, categorize, ecodes
+
+#creates object 'gamepad' to store the data
+#you can call it whatever you like
+gamepad = InputDevice('/dev/input/event3')
+
+#prints out device info at start
+print(gamepad)
+
+#evdev takes care of polling the controller in a loop
+for event in gamepad.read_loop():
+    #filters by event type
+    if event.type == ecodes.EV_KEY:
+        print(event)
 ```
