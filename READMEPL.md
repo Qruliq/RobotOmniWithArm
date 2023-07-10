@@ -10,7 +10,7 @@ Konstrukcja składa się z drewnianej (płyta pilśniowa) platformy mobilnej ora
 ![robot3](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot3.jpg)
 
 ## Budowa i hardware
-*Konstrukcja
+* Konstrukcja
 ![kola](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/kola.png)
 
 Koła mecanum, potocznie nazywane kołami szwedzkimi, zostały opatentowane w 1975r. przez Bengta Erlanda Ilona. Tworząc konstrukcję platformy wyposażonej w parę kół przeznaczonych na lewą oś i parę na prawą oraz cztery silniki prądu stałego jako napęd każdego z kół, możemy uzyskać robota omnikierunkowego, posiadającego trzy stopnie swobody. 
@@ -24,4 +24,4 @@ Platforma składa się z czterech kół mecanum oraz tej samej liczby silników.
 ![silniki](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/silniki.png)
 
 Oprócz platformy mobilnej, niezbędne było wybranie układu wykonawczego dla manipulatora. Ponieważ manipulator wykorzystany w pracy jest implementacją gotowego projektu, również dobór napędu do niego był podyktowany z góry. Sterowanie manipulatorem można było oprzeć o serwa MG-995 lub MG-996 firmy TowerPro. Są to bliźniacze serwa, które mają identyczne charakterystyki i wymiary, lecz różne regulatory. Ze względu na większy moment, do sterowania manipulatorem został wykorzystany MG996R, który jest ulepszoną wersją MG995, oferując przy tym lepszą odporność na wstrząsy oraz większą precyzję. 
-*Hardware
+* Hardware
