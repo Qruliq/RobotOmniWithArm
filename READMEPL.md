@@ -94,16 +94,15 @@ for event in gamepad.read_loop():
 
 Poniższa tabela przedstawia kierunek obrotu kół jaki powinien być zadany na każde koło szwedzkie, tak aby pojazd mógł poruszać się w dziesięciu różnych kierunkach bez zmiany swojej orientacji tak jak jest to przedstawione na powyższym rysunku. Wartość 1 w tabeli oznacza, że koło obraca się do przodu, wartość -1 to obrót do tyłu, natomiast gdy wartość jest równa 0 oznacza że koło pozostaje w bezruchu. Przykładowo, aby wykonać ruch poprzeczny w prawo, prawe koła były obracane względem siebie do wewnątrz, podczas gdy lewe koła były obracane względem siebie na zewnątrz. Warunkiem do uzyskania dziesięciu kierunków ruchu robota bez zmiany jego orientacji jest również utrzymanie takiej samej prędkości na każdym z kół platformy
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
 | Kierunek | Koło 0 | Koło 1 | Koło 2 | Koło 3 |
 |----------|--------|--------|--------|--------|
 | Prosto   |    1   |    1   |    1   |    1   |
-| Tył      |    1   |    1   |    1   |    1   |
-| Lewo     |    1   |    1   |    1   |    1   |
-| Prawo    |    1   |    1   |    1   |    1   |
-| Lewa skośna do przodu|    1   |    1   |    1   |    1   |
+| Tył      |    -1   |    -1   |    -1   |    -1   |
+| Lewo     |    -1   |    1   |    1   |    -1   |
+| Prawo    |    1   |    -1   |    -1   |    1   |
+| Lewa skośna do przodu|    0   |    1   |    1   |    0   |
+| Lewa skośna do tyłu|    -1   |    0   |    0   |    -1   |
+| Prawa skośna do przodu|    1   |    0   |    0   |    1   |
+| Prawa skośna do tyłu|    0   |    1   |    1   |    0   |
+| Obrót w lewo|    -1   |    1   |    -1   |    1   |
+| Obrót w prawo|    1   |    -1   |    1   |    -1   |
