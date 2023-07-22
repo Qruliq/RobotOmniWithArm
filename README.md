@@ -2,19 +2,19 @@
 Omnikierunkowy robot mobilny z manipulatorem/Omnidirectional mobile robot with robot arm
 ![robot1](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot1.jpg)
 
-## O projekcie
-Projekt został zainspirowany wpisem na blogu how to mechatronics: https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
+## About
+Projekt inspired by a blog post on how to mechatronics: https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
 ![robot2](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot2.jpg)
 
-Konstrukcja składa się z drewnianej (płyta pilśniowa) platformy mobilnej oraz manipulatora 5DOF który zastał wydrukowany z filamentu ABS. Platofrma jest prostopadłościanem o wymiarach 310mm x 180mm x 75mm. Projekt manipulatora został zaczerpnięty z projektu „Robotic Arm” użytkownika Ashing, który został opublikowany na stronie internetowej [www.thingiverse.com](https://www.thingiverse.com/thing:994180 ). Projekt manipulatora podlega licencji CC BY-NC 4.0. Domyślnie w projekcie manipulator ma 5 stopni swobody, ale z uwagi na kinematykę podwozia tj. fakt że robot może obracać się wokół własnej osi, część obrotowa ramienia została pominięta.  
+The construction includes a wooden (fiberboard) mobile platform and a 5DOF robot arm, which was printed from ABS filament. The platform is a 310mm x 180mm x 75mm. The design of the robot arm was taken from Ashing's "Robotic Arm" project, which was posted on the website [www.thingiverse.com](https://www.thingiverse.com/thing:994180). This raobot arm was used in this project under license CC BY-NC 4.0. By default, the robot arm has 5 degrees of freedom, but due to the kinematics of the platform, i.e. the fact that the robot can rotate around its axis, the rotating part of the arm hasn't been included in this project.
 ![robot3](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot3.jpg)
 
-## Budowa i hardware
-* **Konstrukcja**
+## Construction and hardware
+* **Construction**
   
 ![kola](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/kola.png)
 
-Koła mecanum, potocznie nazywane kołami szwedzkimi, zostały opatentowane w 1975r. przez Bengta Erlanda Ilona. Tworząc konstrukcję platformy wyposażonej w parę kół przeznaczonych na lewą oś i parę na prawą oraz cztery silniki prądu stałego jako napęd każdego z kół, możemy uzyskać robota omnikierunkowego, posiadającego trzy stopnie swobody. 
+Mecanum wheels, commonly known as Swedish wheels, were invented in 1975 by Bengt Erland Ilon. By creating a platform equipped with a pair of this type of wheels for the left axle and a pair for the right one, and four DC motors as a drive for each wheel, we can obtain an omnidirectional robot with three degrees of freedom.
 
 Koła zostały zamontowane na wałkach silników krokowych, które zostały użyte do przemieszczania się platformy we wszystkich kierunkach. Do umieszczenia kół na napędzie, było konieczne stworzenie dodatkowych piast. Piasty użyte w pracy zostały wykonane z tekstolitu i przykręcone wkrętem przez otwór centralny do koła, następnie całość została nałożona na wałek napędowy silnika i zabezpieczona. Kołnierz piasty ma 45mm, natomiast wałek 15mm.
 
