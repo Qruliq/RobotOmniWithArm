@@ -57,7 +57,7 @@ The entire PCB design was made in EasyEDA, which is free online environment. The
 The operating system used in this project is Raspbian. It is a free Debian-based operating system optimized for Raspberry Pi hardware. Raspbian is a set of basic programs and tools that make the Raspberry Pi works. In addition, it includes over 35,000 packages and pre-compiled software in an accessible format with simple installation process.
 * **Code**
 
-Język Python został wykorzystany w pracy do napisania kodu sterowania robotem. Wykorzystano przy tym biblioteki oraz funkcje jakie oferuje Raspberry Pi. Jedną z bibliotek jakie zostały zastosowane był Servoblaster. Jest to biblioteka, która zapewnia interfejs do sterowania wieloma (domyślnie 8) serwami za pomocą pinów GPIO. Dzięki bibliotece Servoblaster możliwa jest kontrola pozycji serwa, poprzez wysyłanie polecenia do sterownika informującego o szerokości impulsu określonego na wyjściu serwomechanizmu. Szerokość impulsu jest utrzymywana do momentu wysłania nowego polecenia zmieniającego go. W pracy wykorzystano również bibliotekę pigpio, której funkcje posłużyły do sterowania silnikami platformy mobilnej, a także bibliotekę time, dzięki której można stosować stemple czasowe. Aby zainstalować servoblaster u siebie na mikrokontrolerze należy w oknie konsoli przeprowadzić następujące operacje:
+The robot control code was written in Python. There are a lot of libraries and functions offered by the Raspberry Pi and those were used in this project. One of the libraries that were used was Servoblaster. This is a library that provides an interface to control multiple (default 8) servos using GPIO pins. Thanks to the Servoblaster library, it is possible to control the position of the servo via PWM. The pulse width is maintained until a new command is sent to change it.Other libraries used in this project are pigpio library, with functions control the motors of the mobile platform and time library, whith its time stamps. To install the servoblaster on your microcontroller, the following operations must be prompt in the console window:
 ```
 sudo apt-get install python-dev python-setuptools
 git clone https://github.com/WiringPi/WiringPi-Python
@@ -66,8 +66,9 @@ git submodule update --init
 python setup.py install
 cd .. 
 ```
-Kod do sterowania znajduje się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/code
-* **Sterowanie**
+
+The code can be found: https://github.com/Qruliq/RobotOmniWithArm/tree/main/code
+* **Controls**
 
 ![pad](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/pad.jpg)
 
