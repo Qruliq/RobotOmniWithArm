@@ -108,7 +108,7 @@ The table below shows the direction of the wheels that should be given to each S
 | Rotate Left |    -1   |    1   |    -1   |    1   |
 | Rotate Right |    1   |    -1   |    1   |    -1   |
 
-## Podsumowanie
+## Summary
 W ciągu ostatniej dekady roboty mobilne stały się coraz bardziej powszechne. Najbardziej popularnymi robotami na rynku są drony, zabawki RC oraz odkurzacze automatyczne. Powszechny dostęp do Internetu, cyfryzacja, druk 3D oraz niskie ceny części elektronicznych sprawia, że w warunkach domowych możliwym jest tworzenie robotów mobilnych. Obecnie robotyka rozpowszechniła się w takim stopniu, że zajęcia z robotyki są prowadzone dla młodzieży wczesnoszkolnej, organizowane są zawody i konkursy związane z tą dziedziną, a przeglądając fora tematyczne można z łatwością znaleźć intersujące projekty. Zapotrzebowanie na takie urządzenia sprawia, że tworzone są konstrukcje sterowane zdalnie, czy też modele autonomiczne, które cechują się szerokim zastosowaniem. 
 
 Ogromne podziękowania dla Core Electronics, how to mechatronics i urzytkownika Ashing z www.thingiverse.com, którzy swoją twórczością przyczynili się do powstania tego robota. Filmy prezentujące działenie robota znajdują się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/video
