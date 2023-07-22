@@ -20,7 +20,7 @@ The wheels were mounted on shafts of stepper motors that were used to move the p
 
 ![piasty](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/piasty.png)
 
-Konstrukcja obiektu wymaga zastosowania czterech niezależnie sterowanych silników. Głównym czynnikiem podczas doboru układu wykonawczego podwozia była precyzja oraz kompatybilność z układem zasilającym. Z uwagi, że silniki krokowe są napędami precyzyjnymi o prostej budowie, a także charakteryzuje je możliwość kontroli kąta obrotu, praca na niskich prędkościach kątowych oraz zdolność do szybkiej zmiany kierunku ruchu, zostały one wybrane jako napęd podwozia. Z dostępnych na rynku silników krokowych, w pracy zostały użyte cztery silniki bipolarne Nema 17 z momentem trzymania 59Ncm.
+The construction of the robot requires four independently controlled motors. The main factor in the selection of the kinetic components was precision and compatibility with the power supply system. Due to the fact that stepper motors are known from its precision and simple structure. Stepper motor can be control by the angle of rotation work with low angular speeds and the ability to quickly change the direction of movement. From the stepper motors available on the market, the choice was four Nema 17 bipolar motors with a holding torque of 59Ncm.
 
 ![silniki](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/silniki.png)
 
