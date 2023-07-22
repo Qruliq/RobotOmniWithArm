@@ -48,6 +48,7 @@ W celu uproszczenia sterowania układami wykonawczymi robota została zaprojekto
 ![pcb2](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/pcb2.png)
 
 Cały projekt płytki drukowanej został wykonany w darmowym środowisku internetowym EasyEDA. PCB ma dwie warstwy miedzi: dolną i górną . Ścieżki z dolnej warstwy łączą piny STEP oraz DIR sterowników DRV8825 z odpowiadającymi im pinom GPIO Raspberry, zwierają piny RST oraz SLP oraz doprowadzają 12V napięcie zasilania silników. W warstwie górnej została zastosowana płaszczyzna masy. Wyróżnić tu można jedynie ścieżkę która doprowadza napięcie 5V na piny serwa oraz pin FAULT sterownika DRV8825. Ścieżki poprowadzone na piny M1, M2 i M3 sterowników silników krokowych zastały naniesione na model w celu dobrania rozdzielczości mikrokroku. Silniki naszego robota ustawiamy na wartość 1/16 mikrokroku. Za pomocą jumperów spinamy pin M3 z zasilaniem 5V. Kolejnym krokiem było wlutowanie w jej strukturę odpowiednich elementów. Piny damskie zostały wlutowane w miejsca przeznaczone dla sterowników DRV8825 oraz w górnej części płytki prototypowej, w ten sposób, aby pokrywały się z GPIO Raspberry Pi. Piny męskie wlutowano w miejsca, gdzie podłączane są fazy silników krokowych, przewody z serwomechanizmów, oraz ustawianie mikrokroków na sterownikach silników krokowych. Dodatkowo w płytkę wlutowano kondensatory odsprzęgające 100µf 35V oraz zaciski śrubowe na które doprowadzane jest zasilanie 12V. 
+
 **Pliki dotyczące PCB znajdują się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/pcb**
 
 ## Sterowanie
