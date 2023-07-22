@@ -93,20 +93,20 @@ for event in gamepad.read_loop():
 
 ![konfiguracje](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/konfiguracje.png)
 
-Poniższa tabela przedstawia kierunek obrotu kół jaki powinien być zadany na każde koło szwedzkie, tak aby pojazd mógł poruszać się w dziesięciu różnych kierunkach bez zmiany swojej orientacji tak jak jest to przedstawione na powyższym rysunku. Wartość 1 w tabeli oznacza, że koło obraca się do przodu, wartość -1 to obrót do tyłu, natomiast gdy wartość jest równa 0 oznacza że koło pozostaje w bezruchu. Przykładowo, aby wykonać ruch poprzeczny w prawo, prawe koła były obracane względem siebie do wewnątrz, podczas gdy lewe koła były obracane względem siebie na zewnątrz. Warunkiem do uzyskania dziesięciu kierunków ruchu robota bez zmiany jego orientacji jest również utrzymanie takiej samej prędkości na każdym z kół platformy
+The table below shows the direction of the wheels that should be given to each Swedish wheel, in order to move vehicle in ten different directions without changing its orientation as shown in the figure above. Number 1 in the table means that the wheel rotates forward, -1 means that it rotates backwards, and a value of 0 means that the wheel remains stationary. For example, to make a robot move right, the right wheels were rotated inward relative to each other, while the left wheels were rotated outward relative to each other. In order to obtain ten directions without changing robot's orientation, each of the wheels of the platform must maintain the same velocity.
 
-| Kierunek | Koło 0 | Koło 1 | Koło 2 | Koło 3 |
+| Direction | Wheel 0 | Wheel 1 | Wheel 2 | Wheel 3 |
 |----------|--------|--------|--------|--------|
-| Prosto   |    1   |    1   |    1   |    1   |
-| Tył      |    -1   |    -1   |    -1   |    -1   |
-| Lewo     |    -1   |    1   |    1   |    -1   |
-| Prawo    |    1   |    -1   |    -1   |    1   |
-| Lewa skośna do przodu|    0   |    1   |    1   |    0   |
-| Lewa skośna do tyłu|    -1   |    0   |    0   |    -1   |
-| Prawa skośna do przodu|    1   |    0   |    0   |    1   |
-| Prawa skośna do tyłu|    0   |    1   |    1   |    0   |
-| Obrót w lewo|    -1   |    1   |    -1   |    1   |
-| Obrót w prawo|    1   |    -1   |    1   |    -1   |
+| Straight   |    1   |    1   |    1   |    1   |
+| Backwards      |    -1   |    -1   |    -1   |    -1   |
+| Left     |    -1   |    1   |    1   |    -1   |
+| Right    |    1   |    -1   |    -1   |    1   |
+| Diagonally Left-Straight |    0   |    1   |    1   |    0   |
+| Diagonally Left-Backwards |    -1   |    0   |    0   |    -1   |
+| Diagonally Right-Straight |    1   |    0   |    0   |    1   |
+| Diagonally Right-Backwards |    0   |    1   |    1   |    0   |
+| Rotate Left |    -1   |    1   |    -1   |    1   |
+| Rotate Right |    1   |    -1   |    1   |    -1   |
 
 ## Podsumowanie
 W ciągu ostatniej dekady roboty mobilne stały się coraz bardziej powszechne. Najbardziej popularnymi robotami na rynku są drony, zabawki RC oraz odkurzacze automatyczne. Powszechny dostęp do Internetu, cyfryzacja, druk 3D oraz niskie ceny części elektronicznych sprawia, że w warunkach domowych możliwym jest tworzenie robotów mobilnych. Obecnie robotyka rozpowszechniła się w takim stopniu, że zajęcia z robotyki są prowadzone dla młodzieży wczesnoszkolnej, organizowane są zawody i konkursy związane z tą dziedziną, a przeglądając fora tematyczne można z łatwością znaleźć intersujące projekty. Zapotrzebowanie na takie urządzenia sprawia, że tworzone są konstrukcje sterowane zdalnie, czy też modele autonomiczne, które cechują się szerokim zastosowaniem. 
