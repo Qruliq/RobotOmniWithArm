@@ -24,7 +24,7 @@ The construction of the robot requires four independently controlled motors. The
 
 ![silniki](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/silniki.png)
 
-Oprócz platformy mobilnej, niezbędne było wybranie układu wykonawczego dla manipulatora. Ponieważ manipulator wykorzystany w pracy jest implementacją gotowego projektu, również dobór napędu do niego był podyktowany z góry. Sterowanie manipulatorem można było oprzeć o serwa MG-995 lub MG-996 firmy TowerPro. Są to bliźniacze serwa, które mają identyczne charakterystyki i wymiary, lecz różne regulatory. Ze względu na większy moment, do sterowania manipulatorem został wykorzystany MG996R, który jest ulepszoną wersją MG995, oferując przy tym lepszą odporność na wstrząsy oraz większą precyzję. 
+The same decision had to be made for robot arm. Since the robot arm used in the work is an implementation of an existing project, the selection of the drive for was dictated in advance. The choice was MG-995 or MG-996 servos from TowerPro. These servos have identical characteristics and seize, but different regulators. Due to the greater torque, the MG996R was used to control the arm, which is an improved version of the MG995 and offers better resistance and better precision.
 * **Hardware**
 
 ![robot4](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot4.png)
