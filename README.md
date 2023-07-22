@@ -109,11 +109,11 @@ The table below shows the direction of the wheels that should be given to each S
 | Rotate Right |    1   |    -1   |    1   |    -1   |
 
 ## Summary
-W ciągu ostatniej dekady roboty mobilne stały się coraz bardziej powszechne. Najbardziej popularnymi robotami na rynku są drony, zabawki RC oraz odkurzacze automatyczne. Powszechny dostęp do Internetu, cyfryzacja, druk 3D oraz niskie ceny części elektronicznych sprawia, że w warunkach domowych możliwym jest tworzenie robotów mobilnych. Obecnie robotyka rozpowszechniła się w takim stopniu, że zajęcia z robotyki są prowadzone dla młodzieży wczesnoszkolnej, organizowane są zawody i konkursy związane z tą dziedziną, a przeglądając fora tematyczne można z łatwością znaleźć intersujące projekty. Zapotrzebowanie na takie urządzenia sprawia, że tworzone są konstrukcje sterowane zdalnie, czy też modele autonomiczne, które cechują się szerokim zastosowaniem. 
+Over the past decade, mobile robots have become very important field of robotics. The most popular mobile robots on the market are drones, RC toys and robotic vacuum cleaners. Access to the Internet, digitization, 3D printing and low prices of electronic parts make it possible to create mobile robots at home. Currently, robotics has spread to such an extent that robotics classes are conducted for early school students, competitions and competitions related to this field are organized and interesting projects can be easily found by browsing certain forums. The demand for such devices means that remotely controlled or autonomous models will bacome even more common.
 
-Ogromne podziękowania dla Core Electronics, how to mechatronics i urzytkownika Ashing z www.thingiverse.com, którzy swoją twórczością przyczynili się do powstania tego robota. 
+Big shout out to Core Electronics, how to mechatronics and Ashing from www.thingiverse.com. Without them this project would not been finished. You are all truly wonderful.
 
-**Filmy prezentujące działenie robota znajdują się: https://github.com/Qruliq/RobotOmniWithArm/tree/main/video**
+**Videos presenting the robot can be found: https://github.com/Qruliq/RobotOmniWithArm/tree/main/video**
 ## Links
 [1] https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
 
