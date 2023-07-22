@@ -3,7 +3,7 @@ Omnikierunkowy robot mobilny z manipulatorem/Omnidirectional mobile robot with r
 ![robot1](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot1.jpg)
 
 ## About
-Projekt inspired by a blog post on how to mechatronics: https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
+Project inspired by a blog post on how to mechatronics: https://howtomechatronics.com/projects/arduino-robot-arm-and-mecanum-wheels-platform-automatic-operation/
 ![robot2](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/robot2.jpg)
 
 The construction includes a wooden (fiberboard) mobile platform and a 5DOF robot arm, which was printed from ABS filament. The platform is a 310mm x 180mm x 75mm. The design of the robot arm was taken from Ashing's "Robotic Arm" project, which was posted on the website [www.thingiverse.com](https://www.thingiverse.com/thing:994180). This raobot arm was used in this project under license CC BY-NC 4.0. By default, the robot arm has 5 degrees of freedom, but due to the kinematics of the platform, i.e. the fact that the robot can rotate around its axis, the rotating part of the arm hasn't been included in this project.
