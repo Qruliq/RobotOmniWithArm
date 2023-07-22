@@ -51,11 +51,11 @@ The entire PCB design was made in EasyEDA, which is free online environment. The
 
 **PCB files are located: https://github.com/Qruliq/RobotOmniWithArm/tree/main/pcb**
 
-## Sterowanie
-* **Oprogramowanie**
+## Control
+* **Software**
   
-Systemem operacyjnym wykorzystanym w pracy jest Raspbian. Jest to darmowy system operacyjny oparty na Debianie, zoptymalizowany pod kątem sprzętu Raspberry Pi. Raspbian to zestaw podstawowych programów i narzędzi, dzięki którym Raspberry Pi działa. Ponadto zawiera ponad 35000 pakietów oraz wstępnie skompilowane oprogramowanie w przystępnym formacie, ułatwiające instalację na Raspberry Pi.
-* **Kod**
+The operating system used in this project is Raspbian. It is a free Debian-based operating system optimized for Raspberry Pi hardware. Raspbian is a set of basic programs and tools that make the Raspberry Pi works. In addition, it includes over 35,000 packages and pre-compiled software in an accessible format with simple installation process.
+* **Code**
 
 Język Python został wykorzystany w pracy do napisania kodu sterowania robotem. Wykorzystano przy tym biblioteki oraz funkcje jakie oferuje Raspberry Pi. Jedną z bibliotek jakie zostały zastosowane był Servoblaster. Jest to biblioteka, która zapewnia interfejs do sterowania wieloma (domyślnie 8) serwami za pomocą pinów GPIO. Dzięki bibliotece Servoblaster możliwa jest kontrola pozycji serwa, poprzez wysyłanie polecenia do sterownika informującego o szerokości impulsu określonego na wyjściu serwomechanizmu. Szerokość impulsu jest utrzymywana do momentu wysłania nowego polecenia zmieniającego go. W pracy wykorzystano również bibliotekę pigpio, której funkcje posłużyły do sterowania silnikami platformy mobilnej, a także bibliotekę time, dzięki której można stosować stemple czasowe. Aby zainstalować servoblaster u siebie na mikrokontrolerze należy w oknie konsoli przeprowadzić następujące operacje:
 ```
