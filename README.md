@@ -16,7 +16,7 @@ The construction includes a wooden (fiberboard) mobile platform and a 5DOF robot
 
 Mecanum wheels, commonly known as Swedish wheels, were invented in 1975 by Bengt Erland Ilon. By creating a platform equipped with a pair of this type of wheels for the left axle and a pair for the right one, and four DC motors as a drive for each wheel, we can obtain an omnidirectional robot with three degrees of freedom.
 
-Koła zostały zamontowane na wałkach silników krokowych, które zostały użyte do przemieszczania się platformy we wszystkich kierunkach. Do umieszczenia kół na napędzie, było konieczne stworzenie dodatkowych piast. Piasty użyte w pracy zostały wykonane z tekstolitu i przykręcone wkrętem przez otwór centralny do koła, następnie całość została nałożona na wałek napędowy silnika i zabezpieczona. Kołnierz piasty ma 45mm, natomiast wałek 15mm.
+The wheels were mounted on shafts of stepper motors that were used to move the platform in all directions. To place the wheels on the drive, it was necessary to create additional WHA (Wheel hub assembly). The hubs used in the project were made of textolite and screwed through the central hole to the wheel, then the wheel with WHA was attached to the motor shaft and secured. The hub flange is 45mm and the shaft is 15mm.
 
 ![piasty](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/piasty.png)
 
