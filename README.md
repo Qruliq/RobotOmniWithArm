@@ -66,15 +66,14 @@ git submodule update --init
 python setup.py install
 cd .. 
 ```
-
 The code can be found: https://github.com/Qruliq/RobotOmniWithArm/tree/main/code
 * **Controls**
 
 ![pad](https://github.com/Qruliq/RobotOmniWithArm/blob/main/pics/pad.jpg)
 
-Użycie gamepadów w robotyce hobbystycznej jest dość częstym zjawiskiem. Przeglądając pakiety środowiska ROS (Robot Operating System) można znaleźć rozwiązania, które mapują przyciski kontrolera. Najczęściej robotycy w swoich projektach wykorzystują kontrolery do konsoli Playstation. W projekcie został wykorzystany gamepad Gen Game K909. Urządzenie przeznaczone jest do gier na smartfony z systemem Android oraz IOS. Gamepad został wykorzystany do sterowania robotem mobilnym, ponieważ zarówno Raspberry Pi model B+, jak i wcześniej wymieniony gamepad wykorzystują technologie Bluetooth. Po sparowaniu ze sobą dwóch urządzeń istotnym jest zmapowanie jego przycisków. Domyślną ścieżką w przypadku raspbian jest `/dev/input/`. Aby wykorzystać gamepad w naszym projekcie należy w pierwszej kolejności zainstalować bibliotekę evdev `sudo pip install evdev`. Następnie za pomocą poniższego kodu sprawdzamy jakie wartości mają poszczególne przyciski.
+The use of gamepads in ammature robotics is very common. It is easy to find solutions that map controller buttons while browsing ROS (Robot Operating System) packages. The most popular gamepad in roboticists is Playstation controller. The Gen Game K909 gamepad was used in the project. The device is designed for games for Android and IOS smartphones. The gamepad was used to control the mobile robot, because both the Raspberry Pi model B+ and the previously mentioned gamepad use Bluetooth. After pairing two devices with each other, it is important to map its buttons. The default path in raspbian is `/dev/input/`. To use a gamepad it is necessary to install the evdev library `sudo pip install evdev`. Then, using the code below it is possible to check what values ​​each button has.
 ```
-#Kod zaczerpnięty z https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python/
+#Code taken from https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python/
 #import evdev
 from evdev import InputDevice, categorize, ecodes
 
