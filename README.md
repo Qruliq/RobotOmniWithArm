@@ -108,7 +108,7 @@ The table below shows the direction of the wheels that should be given to each S
 | Rotate Left |    -1   |    1   |    -1   |    1   |
 | Rotate Right |    1   |    -1   |    1   |    -1   |
 
-## Summary
+## Final thoughts
 Over the past decade, mobile robots have become very important field of robotics. The most popular mobile robots on the market are drones, RC toys and robotic vacuum cleaners. Access to the Internet, digitization, 3D printing and low prices of electronic parts make it possible to create mobile robots at home. Currently, robotics has spread to such an extent that robotics classes are conducted for early school students, competitions and competitions related to this field are organized and interesting projects can be easily found by browsing certain forums. The demand for such devices means that remotely controlled or autonomous models will bacome even more common.
 
 Big shout out to Core Electronics, how to mechatronics and Ashing from www.thingiverse.com. Without them this project would not been finished. You are all truly wonderful.
